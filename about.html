@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HatchTasks Support</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+        :root {
+            --primary-color: #6366F1;
+            --secondary-color: #4F46E5;
+            --accent-color: #EC4899;
+            --text-color: #1F2937;
+            --bg-color: #F9FAFB;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.5;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            flex-grow: 1;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 0;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary-color);
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--secondary-color);
+        }
+
+        .support-section {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .support-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            margin-bottom: 1rem;
+        }
+
+        .contact-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact-button:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: auto;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        footer a:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">HatchTasks</div>
+        </header>
+
+        <main>
+            <h1>Support Center</h1>
+            
+            <section class="support-section">
+                <h2>Frequently Asked Questions</h2>
+                <ul>
+                    <li><strong>Q: How do I create a new task?</strong><br>A: Tap the '+' button on the main screen and enter your task details.</li>
+                    <li><strong>Q: Why do my tasks disappear each day?</strong><br>A: HatchTasks gives you a fresh start each day, helping you focus on present tasks without past burdens.</li>
+                    <li><strong>Q: How does the egg hatching feature work?</strong><br>A: As you complete tasks, you'll see an egg slowly crack and hatch, visually representing your progress.</li>
+                </ul>
+            </section>
+
+            <section class="support-section">
+                <h2>Troubleshooting</h2>
+                <ul>
+                    <li><strong>App not loading?</strong> Try closing and reopening the app. If issues persist, restart your device.</li>
+                    <li><strong>Tasks not saving?</strong> Ensure you have a stable internet connection and you're using the latest app version.</li>
+                    <li><strong>Display issues?</strong> Check if your iOS is up to date. HatchTasks works best on the latest iOS version.</li>
+                </ul>
+            </section>
+
+            <section class="support-section">
+                <h2>Contact Us</h2>
+                <p>Couldn't find what you're looking for? Our support team is here to help.</p>
+                <a href="mailto:otz.eduardo@gmail.com" class="contact-button">Email Support</a>
+            </section>
+
+            <section class="support-section">
+                <h2>App Information</h2>
+                <ul>
+                    <li><strong>Version:</strong> 1.0.1</li>
+                    <li><strong>Last Updated:</strong> August 8, 2024</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 HatchTasks. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
